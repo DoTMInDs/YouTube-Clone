@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="App.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-icon">
+                <div class="yotube-icons">
+                    <div class="menu">
+                        <i class="material-symbols-outlined dehaze-one">dehaze</i>
+                    </div>
+                    <div class="youtube-logo">
+                        <div class="box-red">
+                            <div class="white-triangle"></div>
+                        </div>
+                        <h1 class="text">YouTube</h1>
+                    </div>
+                </div>
+                <div class="search-box">
+                    <div class="input-search">
+                        <input type="search" id="search" name="search" placeholder="Search">
+                        <button><i class="material-symbols-outlined glass">search</i></button>
+                    </div>
+                    <div class="mic">
+                        <i class="material-symbols-outlined mic-icons">mic</i>
+                    </div>      
+                </div>
+                <div class="notification-icons">
+                    <i class="material-symbols-outlined notifications">more</i>
+                    <i class="material-symbols-outlined notifications video-not">video_call</i>
+                    <i class="material-symbols-outlined notifications">notifications</i>
+                    <i class="material-symbols-outlined notifications">account_circle</i>
+                </div>
+            </div>
+
+            <div class="you-more more-right-side">
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">account_circle</i>
+                    <h2 class="right-ion-icon">Your data in YouTube</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <hr>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">dark_mode</i>
+                    <h2 class="right-ion-icon">Appearance: Device theme</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">translate</i>
+                    <h2 class="right-ion-icon">language: British English</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">info</i>
+                    <h2 class="right-ion-icon">Restricted Mode:Off</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">language</i>
+                    <h2 class="right-ion-icon">Location: Ghana</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">keyboard</i>
+                    <h2 class="right-ion-icon">Keyboard shortcuts</h2>
+                    <i class="material-symbols-outlined ion-icon">chevron_right</i>
+                </div>
+                <hr>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">settings</i>
+                    <h2 class="right-ion-icon">Settings</h2>
+                </div>
+                <hr>
+                <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">help</i>
+                    <h2 class="right-ion-icon">Help</h2>
+                </div> <div class="more-dot">
+                    <i class="material-symbols-outlined ion-icon m-2">feedback</i>
+                    <h2 class="right-ion-icon">Send feedback</h2>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper"> 
+            <div class="rightBox leftBox">
+                <i id="left" class="material-symbols-outlined right-arrow-symbols left-arrow-symbols">chevron_left</i>
+            </div>  
+            <div class="top-nav-list">
+                <button class="top-nav active-top-nav"> All</button>
+                <button class="top-nav">Mixes</button>
+                <button class="top-nav">Music</button>
+                <button class="top-nav">Contemporary Music</button>
+                <button class="top-nav">Live</button>
+                <button class="top-nav">Action Thrillers</button>
+                <button class="top-nav">Nollywood</button>
+                <button class="top-nav">Kumawood</button>
+                <button class="top-nav">Sketch</button>
+                <button class="top-nav">Comedy</button>
+                <button class="top-nav">Gaming</button>
+                <button class="top-nav">Sci-Fiction</button>
+                <button class="top-nav">Streming</button>
+                <button class="top-nav">Netflix</button>
+                <button class="top-nav">Martial Arts Movies</button>
+                <button class="top-nav">Games shows</button>
+                <button class="top-nav">Fiction</button>
+                <button class="top-nav">TV-serie</button>
+                <button class="top-nav">Bollywood</button>
+                <button class="top-nav">Coding</button>
+                <button class="top-nav">HTML</button>
+            </div>
+            <div class="rightBox">
+                <i id="right" class="material-symbols-outlined right-arrow-symbols">chevron_right</i>
+            </div>
+        </div>
+        <side-Bar-Section>
+            <div class="left-navBar-container">
+                <div class="yotube-icons second-absolute">
+                    <div class="menu">
+                        <i class="material-symbols-outlined dehaze-two">dehaze</i>
+                    </div>
+                    <div class="youtube-logo left-nav-logo-yotube">
+                        <div class="box-red">
+                            <div class="white-triangle"></div>
+                        </div>
+                        <h1 class="text">YouTube</h1>
+                    </div>
+                </div>
+                <div class="left-nav-tool">
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">home</i>
+                        <h2 class="left-icons">Home</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">stack_star</i>
+                        <h2 class="left-icons">Shorts</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">subscriptions</i>
+                        <h2 class="left-icons">Subscriptions</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">history</i>
+                        <h2 class="left-icons">History</h2>
+                    </div>
+                </div>
+                <div class="you-more">
+                    <div class="you-options">
+                        <h2 class="you">You</h2>
+                        <i class="material-symbols-outlined right-icon">chevron_right</i>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">account_circle</i>
+                        <h2 class="left-icons">Your Channel</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">history</i>
+                        <h2 class="left-icons">Shorts</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">watch</i>
+                        <h2 class="left-icons">watch</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">expand_more</i>
+                        <h2 class="left-icons">Show more</h2>
+                    </div>
+                </div>
+                <div class="you-more subscribe-left">
+                    <div class="you-options">
+                        <h2 class="you h2-subscribe">Subscriptions</h2>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">SirObed TV</h2>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">Kwaku Osei TV</h2>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">Socca TV Ghana</h2>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">SirObed TV</h2>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">SirObed TV</h2>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="left-navBar-icons justify-content">
+                        <i class="material-symbols-outlined sub-mic-icon">person</i>
+                        <h2 class="left-icons">SirObed TV</h2>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+                <div class="you-more">
+                    <div class="you-options">
+                        <h2 class="you">Explore</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">local_fire_department</i>
+                        <h2 class="left-icons">Trending</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">library_music</i>
+                        <h2 class="left-icons">Music</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">sports_esports</i>
+                        <h2 class="left-icons">Gaming</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">ward</i>
+                        <h2 class="left-icons">Sports</h2>
+                    </div>
+                </div>
+                <div class="you-more">
+                    <div class="you-options">
+                        <h2 class="you">More from YouTube</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">settings</i>
+                        <h2 class="left-icons">Settings</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">report</i>
+                        <h2 class="left-icons">Report history</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">help</i>
+                        <h2 class="left-icons">Help</h2>
+                    </div>
+                    <div class="left-navBar-icons">
+                        <i class="material-symbols-outlined mic-icon">feedback</i>
+                        <h2 class="left-icons">Send feedback</h2>
+                    </div>
+                </div>
+                <div class="you-options">
+                    <p class="you-copyright">About press Copyright contact us Creators...</p>
+                </div>
+                <div class="you-options">
+                    <p class="you-copyright">Terms privacy policy & Safety How YouTube works
+                        Test new features
+                    </p>
+                </div>
+            </div>
+        </side-Bar-Section>
+    </header>
+
+
+   <!-- --------------main-content-----------------starts----------- -->
+    <div class="main-content">  
+        <div class="content-col-1">
+            <div class="main-content-icons">
+                <i class="material-symbols-outlined main-content-symbols">home</i>
+                <h2 class="main-content-left-icons">Home</h2>
+            </div>
+            <div class="main-content-icons">
+                <i class="material-symbols-outlined main-content-symbols">stack_star</i>
+                <h2 class="main-content-left-icons">Shorts</h2>
+            </div>
+            <div class="main-content-icons">
+                <i class="material-symbols-outlined main-content-symbols">subscriptions</i>
+                <h2 class="main-content-left-icons">Subscriptions</h2>
+            </div>
+            <div class="main-content-icons">
+                <i class="material-symbols-outlined main-content-symbols">history</i>
+                <h2 class="main-content-left-icons">History</h2>
+            </div>    
+        </div>
+        <div class="video-container">
+            <div class="video-section">
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/l3I2EtZJiSI?si=gnrndAgYDkoCd-8D" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/utdM9S_Gauc?si=u91Zg3vaISzLsMND" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/HW3kypfmOOI?si=JOhG0k-fnBh23cFr" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=65eq2OA6xlYL-gzt" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
+                <div class="video-content">
+                    <iframe class="card-video"
+                    src="https://www.youtube.com/embed/vpdXgncyyXI?si=Oqk9khDQmKh1UWPY" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                     encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <div class="sm-card">
+                        <div class="sm-card">
+                            <img src="" alt="" class="card-round">
+                        </div>
+                        <div class="description">
+                            <h2 class="title">UNITED SHOWBIZ WITH MZGEE</h2>
+                            <h2 class="date">01/07/23</h2>
+                            <p class="para-title">UTV Ghana Online</p>
+                            <p class="views">4.5K watching</p>
+                            <div class="live-card">
+                                <i class="material-symbols-outlined live">wifi</i>
+                                <p class="live-p">LIVE</p>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
